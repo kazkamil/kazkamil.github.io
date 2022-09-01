@@ -2,7 +2,6 @@
 baseurl: "https://kazkamil.github.io/"
 image_fulls_loc: "/images/fulls"
 image_thumbs_loc: "/images/thumbs"
-google_analytics: 
 
 # UI configs
 title: "Galerie Hasala"
@@ -13,12 +12,5 @@ header:
  subtitle: "by Kamil M. H."
 footer:
  name: "Hey there, my name is Kamil"
- bio: "I am a Artist and a tech enthusiast from Germany."
-web_design: 
-social_urls:
-  facebook: 
-  twitter: 
-  instagram: "https://www.instagram.com/kaz_kamil"
-  dribbble: 
-  linkedin: 
-  github: 
+ bio: "I am a Artist and a tech enthusiast from Germany"
+ instagram: "https://www.instagram.com/kaz_kamil"
