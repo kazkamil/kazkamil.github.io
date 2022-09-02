@@ -19,9 +19,9 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Galerie Hasala
-email: galeriepodbereski@gmail.com
-author: Kamil M. H.
+title: Theme Antarctica
+email: your-email@domain.com
+author: SdtElectronics
 
 # Copyright setting
 # You can use any html code, currently below placeholders are available:
@@ -41,8 +41,8 @@ description: >- # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
-baseurl: "/kazkamil" # the subpath of your site, e.g. /blog
-url: "https://kazkamil.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/jekyll-theme-antarctica" # the subpath of your site, e.g. /blog
+url: "https://sdtelectronics.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 favicon: "" # the favicon for your site
 #avatar: ""
 
@@ -72,13 +72,13 @@ collections:
     output: true
   
 projects_categories: 
-  - Story
-  - Art
+  - Hardware
+  - Software
 
 related_sites:
   Jekyll | Static site generator: https://jekyllrb.com
   Source Repo | Theme antarctica: https://github.com/SdtElectronics/jekyll-theme-antarctica
-  Instagram | kazkamil: https://instagram.com/kaz_kamil
+  My Homepage | SdtElectronics: https://sdtelectronics.github.io/
 
 defaults:
   - scope:
