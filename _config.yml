@@ -1,5 +1,5 @@
  Where things are
-source              : https://github.com/kazkamil/kazkamil.github.io
+source              : .
 destination         : ./_site
 collections_dir     : _collections
 plugins_dir         : _plugins # takes an array of strings and loads plugins in that order
