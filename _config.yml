@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # ASCII-Font › http://patorjk.com/software/taag/#p=display&f=Slant&t=Phlow
 #
 #      _____ _ __          _____      __  __  _
@@ -214,6 +215,19 @@ socialmedia:
 #    ___/ / /_/ (__  |__  )     More › http://sass-lang.com/
 #   /____/\__,_/____/____/      More › http://jekyllrb.com/docs/assets/#sassscss
 #
+=======
+# Site
+title:              Moon
+bio:                'Minimal, one column jekyll theme.'
+description:        "Moon is a minimal, one column jekyll theme for your blog."
+reading_time:       true
+words_per_minute:   #200
+logo:               'assets/img/logo.png'
+background:         'assets/img/placeholder-big.jpg'
+tiled_bg:           false   # Set this true if you want to tile your background image, otherwise it will be covered
+locale:             en_US
+url:                https://kazkamil.github.io/
+>>>>>>> 5f73baca7d92a6cfcc1e9caa05ee452288012aa8
 
 sass:
     sass_dir : _sass
