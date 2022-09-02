@@ -1,74 +1,95 @@
-lang:                  en
-title:                 Hydejack
-copyright:             © 2021. All rights reserved.
+# Jekyll configuration
+markdown: kramdown
+highlighter: rouge
+paginate: 100 # it will paginate after this number
+language: 'en-uk'
+words_per_minute: 200
 
-accent_image:          /assets/img/sidebar-bg.jpg
-accent_color:          rgb(79,177,186)
-theme_color:           rgb(25,55,71)
+# edit baseurl to simply '/' if using as your personal page (instead of a project page)
+baseurl: /jasper2/
 
-google_fonts:          Roboto+Slab:700|Noto+Sans:400,400i,700,700i
-font:                  Noto Sans, Helvetica, Arial, sans-serif
-font_heading:          Roboto Slab, Helvetica, Arial, sans-serif
-font-code:             ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono", "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro", "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
+# Website info
+title: Ghost
+description: The professional publishing platform
+cover: assets/images/blog-cover.jpg
+logo: assets/images/blog-icon.png
+logo_dark: assets/images/favicon.png
+favicon: assets/images/favicon.png
+CNAME: #add cname for website to be created
 
-hydejack:
-  post_addons:         [about, newsletter, related, random, comments]
-  project_addons:      [about, newsletter, other, comments]
+# Social info
+navigation: True # show the navbar links
+subscribers: True # you need to connect an external service for this to work,
+# if 'True' the submit button is disabled for now, but you can change that
+# by editing `_includes/subscribe-form.html`
+twitter: tryghost # replace by your username
+facebook: ghost # replace by your username
 
-  no_mark_external:    false
-  no_push_state:       false
-  no_drawer:           false
-  no_navbar:           false
-  no_search:           false
-  no_inline_css:       false
-  no_page_style:       false
-  no_break_layout:     true
-  no_toc:              false
-  no_third_column:     false
-  no_large_headings:   false
-  no_structured_data:  false
-  no_theme_color:      false
-  no_breadcrumbs:      false
+# Disqus
+disqus: False
+disqus_shortname: jekyllt # replace with your disqus username
 
-  use_lsi:             true
-  cookies_banner:      true
-  advertise:           true
-  hide_dates:          false
-  hide_last_modified:  false
+# Google Analytics
+google_analytics: UA-69281367-1 # replace with your GA tracking identifier
 
-  dark_mode:
-    always:            false
-    dynamic:           true
-    sunrise:           6
-    sunset:            18
-    icon:              true
+# Permalinks
+permalink: /:title
+# permalink: /author/:author
+# permalink: /tag/:tag
 
-  offline:
-    enabled:           false
-    cache_version:     1
-    precache_assets:
-      - /assets/img/swipe.svg
+# Authors' info in `_data/authors.yml`
+# Tags' info in `_data/tags_info.yml`
 
-optional_front_matter:
-  remove_originals:    true
+# gems and other configs
+plugins_dir: [_plugins]
+plugins: [jekyll-paginate, jekyll-feed]
 
-readme_index:
-  remove_originals:    true
-  with_frontmatter:    true
+feed:
+  path: feed.xml
 
-relative_links:
-  collections:         true
+# Additional settings available on the front-matter
+# Site logo in the index.html (as in demo.ghost.io)
+# Author's page cover in _layouts/author.html
+# The same for page.html and tag.html layouts
+# Post's page cover as a per-post basis _posts/...
+# Disqus comments as a per-post basis
+# ...
 
-titles_from_headings:
-  strip_title:         true
-  collections:         true
+# Settings for building master branch with travis-ci
+# with jekyll-travis
 
-compress_html:
-  comments:            ["<!-- ", " -->"]
-  clippings:           all
-  endings:             all
-  ignore:
-    envs:              [development]
+# Settings for deploy rake task
+# Username and repo of Github repo, e.g.
+# https://github.com/USERNAME/REPO.git
+# username defaults to ENV['GIT_NAME'] used by Travis
+# repo defaults to USERNAME.github.io
+# Branch defaults to "source" for USERNAME.github.io
+# or "master" otherwise
+safe: False
+lsi: False
+username: jekyllt
+repo: jasper2
+branch: master
+relative_source: ../jasper2/
+destination: ../jasper2-pages/
+production_url:  https://jekyllt.github.io/jasper2/
+source_url:  https://github.com/jekyllt/jasper2/
 
-sass:
-  style:               compressed
+exclude:
+  - assets/css
+  - node_modules
+  - vendor
+  - .travis.yml
+  - Gemfile
+  - Gemfile.lock
+  - GHOST.txt
+  - gulpfile.js
+  - LICENSE
+  - package.json
+  - package-lock.json
+  - Rakefile
+  - README.md
+  - script.py
+  - changelog.md
+  - "*.Rmd"
+  - .git*

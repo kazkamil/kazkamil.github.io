@@ -1,10 +1,32 @@
-node_modules
-vendor
-.bundle
-.sass-cache
-.jekyll-metadata
-.jekyll-cache
-*.gem
+# OS X
+.DS_Store
 
-#<removed/js>
-#<removed/css>
+# Jekyll build
+/_site/
+.jekyll-metadata
+#Gemfile.lock
+
+# webstorm
+.idea/
+
+# others
+*.swp
+package-lock.json
+
+# site build
+*.gem
+*.rbc
+.bundle
+.config
+coverage
+InstalledFiles
+lib/bundler/man
+pkg
+rdoc
+spec/reports
+test/tmp
+test/version_tmp
+tmp
+vendor
+Gemfile.lock
+node_modules
