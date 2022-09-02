@@ -10,10 +10,10 @@
 ############################
 
 # Name of website
-title: My Website
+title: Galerie Hasala
 
 # Your name to show in the footer
-author: Some Person
+author: K. M. H.
 
 <<<<<<< HEAD:_config.yml
 ###############################################
@@ -23,9 +23,9 @@ author: Some Person
 navbar-links:
   About Me: "aboutme"
   Resources:
-    - Beautiful Jekyll: "https://beautifuljekyll.com"
+    - made with Beautiful Jekyll: "https://beautifuljekyll.com"
     - Learn markdown: "https://www.markdowntutorial.com/"
-  Author's home: "https://deanattali.com"
+  Author's home: "https://kazkamil.github.io/"
 =======
 # Main author of the website
 # See > authors.yml
