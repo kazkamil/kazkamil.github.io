@@ -1,48 +1,35 @@
 ---
-layout: default
-current: page
-class: page-template
-disqus: false
+layout: compress
 ---
-
-<!-- < default -->
-<!-- The tag above means: insert everything in this file
-into the {body} of the default.hbs template -->
-
-<!-- The big featured header, it uses blog cover image as a BG if available -->
-<header class="site-header outer">
-    <div class="inner">
-        {% include site-nav.html %}
-    </div>
-</header>
-
-<!-- Everything inside the #post tags pulls data from the post -->
-<!-- #post -->
-
-<main id="site-main" class="site-main outer" role="main">
-    <div class="inner">
-
-        <article class="post-full {% if page.tags.size > 0 %}{% for tag in page.tags %} tag-{{ tag | slugify: "latin" }}{% endfor %}{% endif %} {{ page.subclass }} {% unless page.cover %}no-image{% endunless %}">
-
-            <header class="post-full-header">
-                <h1 class="post-full-title">{{ page.title }}</h1>
-            </header>
-
-            {% if page.cover %}
-            <figure class="post-full-image" style="background-image: url({{ site.baseurl }}{{ page.cover }})">
-            </figure>
-            {% endif %}
-
-            <section class="post-full-content">
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"><!--<![endif]-->
+<head>
+    {% include head.html %}
+</head>
+<body>
+    {% include nav.html %}
+    <!-- Header -->
+    <header class="header" role="banner">
+        <div class="wrapper animated fadeIn">
+            <div class="content">
+                <div class="post-title {% if page.feature %} feature {% endif %}">
+                    <h1>{{ page.title }}</h1>
+                    <a class="btn zoombtn" href="{{site.url}}">
+                        <i class="fa fa-chevron-left"></i>
+                    </a>
+                </div>
                 {{ content }}
-            </section>
-
-        </article>
-
-    </div>
-</main>
-
-<!-- /post -->
-
-<!-- The #contentFor helper here will send everything inside it up to the matching #block helper found in default.hbs -->
-{% include page-scripts.html %}
+            </div>
+        </div>
+        {% if page.comments and site.disqus_shortname %}<section id="disqus_thread" class="animated fadeInUp"></section><!-- /#disqus_thread -->{% endif %}
+    </header>
+    {% include scripts.html %}
+    {% if site.mathjax == true %}
+    <!-- MathJax -->
+    <script async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    {% endif %}
+</body>
+</html>

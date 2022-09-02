@@ -1,17 +1,37 @@
 ---
 layout: page
-current: about
-title: About
-navigation: true
-logo: 'assets/images/ghost.png'
-class: page-template
-subclass: 'post page'
+title: About the Theme
+tags: [about, Jekyll, theme, moon]
+date: 2016-03-21
+comments: false
 ---
+    
+<center><a href="http://taylantatli.github.io/Moon"><b>Moon</b></a> is a minimal, one column jekyll theme.</center>
 
-Ghost is professional publishing platform designed for modern journalism. This is a demo site of a basic Ghost install to give you a general sense of what a new Ghost site looks like when set up for the first time.
+## Features
+* Minimal, you can focus on your content
+* Responsive
+* Disqus integration
+* Syntax highlighting
+* Optional post image
+* Social icons
+* Page for sharing projects
+* Optional background image
+* Simple navigation menu
+* MathJax support
 
-> If you'd like to set up a site like this for yourself, head over to [Ghost.org](https://ghost.org/) and start a free 14 day trial to give Ghost a try!
+## Preview
 
-If you're a developer: Ghost is a completely open source (MIT) Node.js application built on a JSON API with an Ember.js admin client. It works with MySQL and SQLite, and is publicly available [on Github](https://github.com/TryGhost/ghost).
+{% capture images %}
+    https://cloud.githubusercontent.com/assets/754514/14509720/61c61058-01d6-11e6-93ab-0918515ecd56.png
+    https://cloud.githubusercontent.com/assets/754514/14509716/61ac6c8e-01d6-11e6-879f-8308883de790.png
+{% endcapture %}
+{% include gallery images=images caption="Screenshots of Moon Theme" cols=2 %}
 
-If you need help with using Ghost, you'll find a ton of useful articles on [our knowledgebase](https://help.ghost.org/), as well as extensive [developer documentation](https://docs.ghost.org/).
+See a [live version of Moon](http://taylantatli.github.io/Moon) hosted on GitHub.
+
+## Getting Started
+
+To learn how to install and use this theme check out the [Setup Guide](http://taylantatli.me/Moon/moon-theme/) for more information.
+      
+[Install Moon](https://github.com/TaylanTatli/Moon){: .btn}
