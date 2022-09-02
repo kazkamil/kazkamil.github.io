@@ -1,98 +1,74 @@
-# Theme Antarctica
-#
-# Stylish and feature-rich theme for Jekyll
-# 
-# Website: https://github.com/SdtElectronics/jekyll-theme-antarctica
-#
-# See the LICENCE file.
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you
-# use 'bundle exec jekyll serve'. If you change this file, please restart
-# the server process.
+lang:                  en
+title:                 Hydejack
+copyright:             © 2021. All rights reserved.
 
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
+accent_image:          /assets/img/sidebar-bg.jpg
+accent_color:          rgb(79,177,186)
+theme_color:           rgb(25,55,71)
 
-title: Theme Antarctica
-email: your-email@domain.com
-author: SdtElectronics
+google_fonts:          Roboto+Slab:700|Noto+Sans:400,400i,700,700i
+font:                  Noto Sans, Helvetica, Arial, sans-serif
+font_heading:          Roboto Slab, Helvetica, Arial, sans-serif
+font-code:             ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono", "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro", "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
 
-# Copyright setting
-# You can use any html code, currently below placeholders are available:
-# * current year: {currentYear}
-# * author: {author} (Value is the same as site.author)
-# * copyright: (c) - ©
-# * copyleft: (cleft)
-# * sound recording copyright: (p) - ℗ 
-#
-# For example:
-#   "Copyright (c) 2017-{currentYear} <a href="https://example.com">{author}</a>"
-#   "Copyright © 2017-2021 Foobar"
-#
-copyright: "2021-{currentYear} {author}"
+hydejack:
+  post_addons:         [about, newsletter, related, random, comments]
+  project_addons:      [about, newsletter, other, comments]
 
-description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "/jekyll-theme-antarctica" # the subpath of your site, e.g. /blog
-url: "https://sdtelectronics.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-favicon: "" # the favicon for your site
-#avatar: ""
+  no_mark_external:    false
+  no_push_state:       false
+  no_drawer:           false
+  no_navbar:           false
+  no_search:           false
+  no_inline_css:       false
+  no_page_style:       false
+  no_break_layout:     true
+  no_toc:              false
+  no_third_column:     false
+  no_large_headings:   false
+  no_structured_data:  false
+  no_theme_color:      false
+  no_breadcrumbs:      false
 
-template:
-# date format
-# refer to https://shopify.github.io/liquid/filters/date/ if you want to customize this
-  date_format: "%b %d, %Y"
-  widgets: colophon comment global_cmt post_meta share related_sites table_of_content
-  portfolios: projects gallery
-  propIcons:
-    pinned: "&#x1f4cc;&#xFE0E;"
+  use_lsi:             true
+  cookies_banner:      true
+  advertise:           true
+  hide_dates:          false
+  hide_last_modified:  false
 
-# If you want to generate website sitemap, you can set true
-# sitemap: false
+  dark_mode:
+    always:            false
+    dynamic:           true
+    sunrise:           6
+    sunset:            18
+    icon:              true
 
-# Valine Comments
-valine:
-  appId: "GoHOdR14a6Qubobq68emQ8n2-MdYXbMMI"
-  appKey: "SCxcdTzApt8RXJVrtqsDXay0"
-  serverURLs: https://gohodr14.api.lncldglobal.com
+  offline:
+    enabled:           false
+    cache_version:     1
+    precache_assets:
+      - /assets/img/swipe.svg
 
-collections_dir: collections
-collections:
-  projects:
-    output: true
-  gallery:
-    output: true
-  
-projects_categories: 
-  - Hardware
-  - Software
+optional_front_matter:
+  remove_originals:    true
 
-related_sites:
-  Jekyll | Static site generator: https://jekyllrb.com
-  Source Repo | Theme antarctica: https://github.com/SdtElectronics/jekyll-theme-antarctica
-  My Homepage | SdtElectronics: https://sdtelectronics.github.io/
+readme_index:
+  remove_originals:    true
+  with_frontmatter:    true
 
-defaults:
-  - scope:
-      path: ""
-      type: "pages"
-    values:
-      avatar: "assets/img/a-default.png"
+relative_links:
+  collections:         true
 
-# Build settings
-highlighter: rouge
-markdown: kramdown
-kmarkdown:
-  input: GFM
+titles_from_headings:
+  strip_title:         true
+  collections:         true
 
-plugins:
-  - jekyll-seo-tag
-  - jekyll-sitemap
+compress_html:
+  comments:            ["<!-- ", " -->"]
+  clippings:           all
+  endings:             all
+  ignore:
+    envs:              [development]
+
+sass:
+  style:               compressed
