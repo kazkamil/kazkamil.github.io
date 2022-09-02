@@ -15,6 +15,7 @@ title: My Website
 # Your name to show in the footer
 author: Some Person
 
+<<<<<<< HEAD:_config.yml
 ###############################################
 # --- List of links in the navigation bar --- #
 ###############################################
@@ -25,6 +26,16 @@ navbar-links:
     - Beautiful Jekyll: "https://beautifuljekyll.com"
     - Learn markdown: "https://www.markdowntutorial.com/"
   Author's home: "https://deanattali.com"
+=======
+# Main author of the website
+# See > authors.yml
+author: K
+
+# This URL is the main address for absolute links. Don't include a slash at the end.
+#
+url: 'https://kazkamil.github.io'
+baseurl: '/feeling-responsive'
+>>>>>>> c0b6e7c4d8daf4a0546dba85ee21cf0069eee72a:config.yml
 
 ################
 # --- Logo --- #
@@ -97,7 +108,7 @@ share-links-active:
 url-pretty: "MyWebsite.com"
 
 # Excerpt word length - Truncate the excerpt of each post on the feed page to the specified number of words
-excerpt_length: 50
+#excerpt_length: 50
 
 # Whether or not to show an excerpt for every blog post in the feed page
 feed_show_excerpt: true
@@ -251,7 +262,7 @@ timezone: "America/Toronto"
 markdown: kramdown
 highlighter: rouge
 permalink: /:year-:month-:day-:title/
-paginate: 5
+#paginate: 5
 
 kramdown:
   input: GFM
