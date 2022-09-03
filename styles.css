@@ -4,6 +4,15 @@ h1 {
     font-family: "Source Sans Pro", sans-serif;
     font-weight: normal;
 }
+
+h2 {
+	text-align: center;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: normal;
+}
+p  {
+	text-align: center;
+}
 #mySidenav a {
   position: absolute;
   left: -80px;
