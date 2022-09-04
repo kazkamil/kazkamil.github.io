@@ -13,6 +13,11 @@ h2 {
 p  {
 	text-align: center;
 }
+header {
+  background-color: #f1f1f1;
+  padding: 20px;
+  text-align: center;
+}
 #mySidenav a {
   position: absolute;
   left: -80px;
