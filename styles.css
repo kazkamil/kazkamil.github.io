@@ -38,21 +38,25 @@ p  {
 #about {
   top: 150px;
   background-color: #04AA6D;
+  text-align: right
 }
 
 #blog {
   top: 210px;
   background-color: #2196F3;
+  text-align: right
 }
 
 #projects {
   top: 270px;
   background-color: #f44336;
+  text-align: right
 }
 
 #contact {
   top: 330px;
-  background-color: #555
+  background-color: #555;
+  text-align: right
 }
 
 @media screen and (max-width: 700px) {
