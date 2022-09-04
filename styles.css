@@ -14,7 +14,7 @@ p  {
 	text-align: center;
 }
 .header {
-  background-color: #f1f1f1;
+  background-color: #008000;
   padding: 20px;
   text-align: center;
   border-radius: 20px
@@ -36,22 +36,22 @@ p  {
 }
 
 #about {
-  top: 50px;
+  top: 150px;
   background-color: #04AA6D;
 }
 
 #blog {
-  top: 110px;
+  top: 210px;
   background-color: #2196F3;
 }
 
 #projects {
-  top: 170px;
+  top: 270px;
   background-color: #f44336;
 }
 
 #contact {
-  top: 230px;
+  top: 330px;
   background-color: #555
 }
 
