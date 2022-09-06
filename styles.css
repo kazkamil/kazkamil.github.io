@@ -55,6 +55,43 @@ body {
   background: #ddd;
   color: black;
 }
+html {
+  scroll-behavior: smooth;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+#top {
+  height: 1px;
+  width: 100%;
+}
+.content {
+  margin: 50px 25px;
+  h1 {
+    margin-bottom: 25px;
+  }
+}
+.scroll {
+  &-top {
+    right: 25px;
+  }
+  &-bottom {
+    left: 25px;
+  }
+  position: fixed;
+  bottom: 25px;
+
+  z-index: 99;
+  outline: none;
+  background-color: #efefef;
+  border: 1px solid #333;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+  text-decoration: none;
+}
 
 
 
