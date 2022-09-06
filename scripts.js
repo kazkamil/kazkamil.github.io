@@ -11,3 +11,12 @@ function myFunction() {
   this.style.backgroundColor = "pink";
 }
 </script>
+
+
+
+<script>
+function myFunction() {
+  var x = document.getElementById("mySidenav");
+  x.style. = "red";
+}
+</script>

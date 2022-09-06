@@ -23,6 +23,16 @@ i  {
   text-align: center;
   border-radius: 20px
 }
+body {
+  background: #555;
+}
+
+.content {
+  max-width: 500px;
+  margin: auto;
+  background: white;
+  padding: 10px;
+}
 #mySidenav a {
   position: absolute;
   left: -80px;
@@ -76,3 +86,4 @@ i  {
     float: none;
   }
 }
+
