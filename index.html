@@ -1,57 +1,23 @@
-<!doctype html>
-<html>
-    <head>
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-			
-		<title>GP-Service</title>
-			
-			<link rel="stylesheet" href="styles.css">
-			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    </head>
-<body>
-	<div class="header">
-		<h1>GP-Service</h1>
-	</div>
-        
-<div id="navbar" class="navbar">
-  <a href="#" id="about" >About <i class="fa fa-info"></i></a>
-  <a href="#" id="blog" >Blog <i class="fa fa-book"></i></a>
-  <a href="#" id="projects" >Projects <i class="fa fa-archive"></i></a>
-  <a href="#" id="contact" >Contact <i class="fa fa-comments-o"></i></a>
-</div>
+---
+layout: presentation
+---
 
-<div id="top"></div>
-<a href="#bottom" class="scroll scroll-bottom">down</a>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+				{% assign sitePosts = site.posts | reverse | sort:date %}
+				{% assign prevYear = sitePosts[0].date | date: "%Y" %}
 
-<div class="content">
-<h2>Hoverable Sidenav Buttons</h2>
-<p>Hover over the buttons in the left side navigation to open them.</p>
-<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
-At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
-At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
-At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.   
-Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
-Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
-Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
-Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis.   
-At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
-At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, At accusam aliquyam diam diam dolore dolores duo eirmod eos erat, et nonumy sed tempor et et invidunt justo labore Stet clita ea et gubergren, kasd magna no rebum.
-sanctus sea sed takimata ut vero voluptua. est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur</p>
-</div>
+				{% for post in sitePosts %}
+					{% assign postYear = post.date | date: "%Y" %}
 
-<div id="bottom"></div>
-<a href="#top" class="scroll scroll-top">up</a>
+					{% if prevYear != postYear %}
+						{% assign prevYear = postYear %}
+						</section><section>
+					{% endif %}
 
+					<section>{{ post.content }}</section>
+				{% endfor %}
+			</div>
+		</div>
 
-        <script src="scripts.js"></script>
-        
-    </body>
-
-</html>
