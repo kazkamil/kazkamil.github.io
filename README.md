@@ -1,23 +1,14 @@
-# web-presentation
+![Multiverse by HTML5UP](https://repository-images.githubusercontent.com/192228387/23ca0280-91f4-11e9-86e0-afcf90e961ad)
 
-Project is designed to quickly build presentation as a web page.
+# Jekyll Multiverse Template
 
-To create your presentation just fork this repository.
+[![Build Status](https://travis-ci.com/joaomlneto/jekyll-multiverse-template.svg?branch=master)](https://travis-ci.com/joaomlneto/jekyll-multiverse-template)
 
-presentation example https://deepidea.github.io/web-presentation/
+This is a Jekyll site template based on the [Multiverse](https://html5up.net/multiverse) template by [HTML5 UP](https://html5up.net)
 
+Demo: https://joaomlneto.github.io/jekyll-multiverse-template/
 
-**NOTES**
+Each of the images displayed in the website is its own separate *post*:
+- Metadata (image title and caption) goes in the [`_images`](_images) folder
+- Actual images (thumbnails and fulls go into [`assets/images`](assets/images)).
 
-- Files names should start with valid  year-month-day format (f.e. 1000-01-01-example.md)
-
-- Years will be displayed horizontally  
-
-- Months will be displayed as vertical navigation in a given year
-
-- Presentation pages will be displayed in chronological order
-
-- GitHub Pages will automatically generate/update website with presentation for you (please wait up to 1 minute)
-
-
-Enjoy
