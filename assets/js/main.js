@@ -266,7 +266,7 @@
 				usePopupForceClose: true,
 				usePopupLoader: true,
 				usePopupNav: true,
-				windowMargin: 50
+				windowMargin: 20
 			});
 
 			// Hack: Set margins to 0 when 'xsmall' activates.
