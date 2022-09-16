@@ -11,10 +11,10 @@
 
       <div id="main">
         {% for image in site.images %}
-        <article class="thumb" style="width:33,33%">
+        <article class="thumb" style="width:50%">
           <a href="{{site.baseurl}}/assets/images/fulls/{{ image.path | split: '/' | last | split: '.' | first }}.jpg" class="image">
             <img src="{{site.baseurl}}/assets/images/thumbs/{{ image.path | split: '/' | last | split: '.' | first }}.jpg" alt="{{ image.title }}" />
-          </a>
+          </a> 
           <h2>{{ image.title }}</h2>
         </article>
         {% endfor %}
