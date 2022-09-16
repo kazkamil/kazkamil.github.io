@@ -11,7 +11,7 @@
 
       <div id="main">
         {% for image in site.images %}
-        <article class="thumb" style="border:5px">
+        <article class="thumb" style="border:1px; margin:25px;">
           <a href="{{site.baseurl}}/assets/images/fulls/{{ image.path | split: '/' | last | split: '.' | first }}.jpg" class="image">
             <img src="{{site.baseurl}}/assets/images/thumbs/{{ image.path | split: '/' | last | split: '.' | first }}.jpg" alt="{{ image.title }}" />
           </a> 
