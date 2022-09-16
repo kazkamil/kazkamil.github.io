@@ -1614,7 +1614,6 @@ input, select, textarea {
 			opacity: 1;
 			overflow: hidden;
 			position: relative;
-			width: 100%;
 		}
 
 			#main .thumb:after {
