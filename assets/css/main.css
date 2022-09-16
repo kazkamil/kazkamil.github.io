@@ -1614,6 +1614,7 @@ input, select, textarea {
 			opacity: 1;
 			overflow: hidden;
 			position: relative;
+			width: 100%;
 		}
 
 			#main .thumb:after {
@@ -1629,7 +1630,7 @@ input, select, textarea {
 				left: 0;
 				position: absolute;
 				top: 0;
-				width: 50%;
+				width: 100%;
 			}
 
 			#main .thumb > .image {
