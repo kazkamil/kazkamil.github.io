@@ -1673,7 +1673,7 @@ input, select, textarea {
 			position: absolute;
 			top: 0;
 			visibility: hidden;
-			width: 100%;
+			width: 45%;
 			z-index: 1;
 		}
 
