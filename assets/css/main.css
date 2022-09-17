@@ -1648,7 +1648,9 @@ input, select, textarea {
 				z-index: 1;
 				top: 90%;
 				left: 50%;
-				border: 15px solid #ccff99;
+				text-decoration: bold;
+				background-color: #99ccff;
+				background-size: 100%;
 			}
 
 			#main .thumb > p {
