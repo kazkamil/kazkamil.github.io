@@ -1651,6 +1651,7 @@ input, select, textarea {
 				color: #ccff99;
 				text-decoration: bold;
 				background-color: #99ccff;
+				border: 10px;
 			}
 
 			#main .thumb > p {
