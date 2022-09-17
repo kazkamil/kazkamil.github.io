@@ -72,7 +72,7 @@
 }
 
 html, body, div, span, applet, object,
-iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
+iframe, h1, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
 code, del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var, b,
@@ -235,7 +235,7 @@ input, select, textarea {
 		margin: 0 0 2em 0;
 	}
 
-	h1, h2, h3, h4, h5, h6 {
+	h1, h3, h4, h5, h6 {
 		color: #ffffff;
 		font-weight: 300;
 		letter-spacing: 0.1em;
@@ -1647,6 +1647,7 @@ input, select, textarea {
 				position: absolute;
 				z-index: 1;
 				text-align: center;
+				margin: auto;
 				font-weight: bold;
 				color: Tomato;
 			}
