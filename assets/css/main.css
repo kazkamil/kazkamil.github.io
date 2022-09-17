@@ -1648,14 +1648,10 @@ input, select, textarea {
 				z-index: 1;
 				top: 90%;
 				left: 50%;
-				text-decoration: bold;
+				font-weight: bold;
+				color:Tomato;
 			}
-			#main .thumb > focus {
-				color: #000;
-				text-decoration: none;
-				cursor: pointer;
-}
-
+			
 			#main .thumb > p {
 				display: none;
 				
