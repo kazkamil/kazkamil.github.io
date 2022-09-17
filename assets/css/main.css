@@ -1648,10 +1648,8 @@ input, select, textarea {
 				z-index: 1;
 				top: 90%;
 				left: 50%;
-				color: #ccff99;
 				text-decoration: bold;
-				background-color: #99ccff;
-				border: 10px;
+				border: 15px solid green;
 			}
 
 			#main .thumb > p {
