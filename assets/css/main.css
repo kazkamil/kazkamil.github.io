@@ -1617,7 +1617,7 @@ input, select, textarea {
 
 			#main .thumb:after {
 				pointer-events: none;
-				background-size: contain;
+				background-size: cover;
 				content: '';
 				display: block;
 				height: 100%;
