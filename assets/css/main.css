@@ -1654,6 +1654,8 @@ input, select, textarea {
 
 			#main .thumb > p {
 				display: none;
+				background-color: lightgreen;
+				border-radius: 50%;
 			}
 
 		#main:after {
