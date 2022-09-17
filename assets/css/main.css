@@ -1644,13 +1644,13 @@ input, select, textarea {
 				pointer-events: none;
 				bottom: 1.875em;
 				font-size: 1em;
-				left: 2.1875em;
+				
 				margin: 0;
 				position: absolute;
 				z-index: 1;
 				background-color: green;
-				border:10px;
-				border-radius: 20%;
+				border:15px;
+				border-radius: 25%;
 			}
 
 			#main .thumb > p {
