@@ -1617,7 +1617,7 @@ input, select, textarea {
 
 			#main .thumb:after {
 				pointer-events: none;
-				background-size: cover;
+				background-size: contain;
 				content: '';
 				display: block;
 				height: 100%;
@@ -1631,7 +1631,7 @@ input, select, textarea {
 				-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
 				background-position: center;
 				background-repeat: no-repeat;
-				background-size: contain;
+				background-size: cover;
 				border: 0;
 				height: 100%;
 				left: 0;
