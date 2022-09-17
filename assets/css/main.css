@@ -1648,15 +1648,11 @@ input, select, textarea {
 				margin: 0;
 				position: absolute;
 				z-index: 1;
-				background-color: lightgreen;
-				border:1px;
-				border-radius: 20%;
-				opacity: 0.3;
 			}
 
 			#main .thumb > p {
 				display: none;
-				background-color: lightgreen;
+				background-color: green;
 				border:1px;
 				border-radius: 20%;
 				opacity: 0.3;
