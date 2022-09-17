@@ -1649,7 +1649,7 @@ input, select, textarea {
 				top: 90%;
 				left: 50%;
 				text-decoration: bold;
-				border: 15px solid green;
+				border: 15px solid #ccff99;
 			}
 
 			#main .thumb > p {
