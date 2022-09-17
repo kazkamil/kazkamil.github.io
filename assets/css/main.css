@@ -1649,6 +1649,7 @@ input, select, textarea {
 				top: 90%;
 				left: 50%;
 				color: #ccff99;
+				text-decoration: bold;
 			}
 
 			#main .thumb > p {
