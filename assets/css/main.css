@@ -1644,7 +1644,8 @@ input, select, textarea {
 				pointer-events: none;
 				bottom: 1.875em;
 				font-size: 1em;
-				text-align: center;
+				top: 90%;
+				left: 50%;
 				position: absolute;
 				z-index: 1;
 				background-color: green;
