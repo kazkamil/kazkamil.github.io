@@ -1649,7 +1649,9 @@ input, select, textarea {
 				position: absolute;
 				z-index: 1;
 				background-color: lightgreen;
-				border-radius: 50%;
+				border:1px;
+				border-radius: 20%;
+				opacity: 0.3;
 			}
 
 			#main .thumb > p {
