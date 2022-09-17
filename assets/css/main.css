@@ -1646,8 +1646,7 @@ input, select, textarea {
 				font-size: 1.5em;
 				position: absolute;
 				z-index: 1;
-				top: 90%;
-				left: 50%;
+				margin: auto;
 				font-weight: bold;
 				color: Tomato;
 			}
