@@ -1643,14 +1643,12 @@ input, select, textarea {
 			#main .thumb > h2 {
 				pointer-events: none;
 				bottom: 1.875em;
-				font-size: 1em;
+				font-size: 2em;
 				position: absolute;
 				z-index: 1;
 				top: 90%;
 				left: 50%;
 				text-decoration: bold;
-				background-color: #99ccff;
-				background-size: 100%;
 			}
 
 			#main .thumb > p {
