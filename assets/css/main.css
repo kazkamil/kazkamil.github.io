@@ -163,7 +163,7 @@ input, select, textarea {
 	}
 
 	body {
-		background: lightgrey;
+		background: white;
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -1616,7 +1616,6 @@ input, select, textarea {
 		}
 
 			#main .thumb:after {
-				
 				pointer-events: none;
 				background-size: cover;
 				content: '';
@@ -1649,6 +1648,8 @@ input, select, textarea {
 				margin: 0;
 				position: absolute;
 				z-index: 1;
+				background-color: lightgreen;
+				border-radius: 50%;
 			}
 
 			#main .thumb > p {
