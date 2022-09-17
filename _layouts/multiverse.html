@@ -1,7 +1,12 @@
 <!DOCTYPE html>
-<head>
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
-</head>
+<style>
+a {
+		-webkit-column-count: 3; /* Chrome, Safari, Opera */
+		   -moz-column-count: 3; /* Firefox */
+				column-count: 3; /* Standard syntax */
+	}
+</style>
 
   {%- include head.html -%}
 
