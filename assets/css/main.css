@@ -1797,7 +1797,7 @@ input, select, textarea {
 				-webkit-transition-delay: 2.075s;
 				-ms-transition-delay: 2.075s;
 				transition-delay: 2.075s;
-				width: 50%;
+				width: 33,33%;
 			}
 
 				#main .thumb:nth-child(1) {
@@ -1872,7 +1872,7 @@ input, select, textarea {
 				-webkit-transition-delay: 1.625s;
 				-ms-transition-delay: 1.625s;
 				transition-delay: 1.625s;
-				width: 50%;
+				width: 33,33%;
 			}
 
 				#main .thumb:nth-child(1) {
