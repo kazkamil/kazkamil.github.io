@@ -1650,6 +1650,7 @@ input, select, textarea {
 				left: 50%;
 				color: #ccff99;
 				text-decoration: bold;
+				background-color: black ;
 			}
 
 			#main .thumb > p {
