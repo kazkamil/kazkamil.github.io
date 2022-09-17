@@ -1648,9 +1648,6 @@ input, select, textarea {
 				margin: 0;
 				position: absolute;
 				z-index: 1;
-				position: absolute;
-				top: 90%;
-				left:0;
 				background-color: green;
 				border:10px;
 				border-radius: 20%;
