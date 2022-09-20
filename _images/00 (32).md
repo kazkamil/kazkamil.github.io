@@ -1,3 +1,0 @@
----
-title: female_demon
----
