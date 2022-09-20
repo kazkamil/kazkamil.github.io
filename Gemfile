@@ -33,8 +33,3 @@ gem "wdm", "~> 0.1.0" if Gem.win_platform?
 gem 'html-proofer'
 
 gem "webrick", "~> 1.7"
-<<<<<<< HEAD
-
-gem "jekyll-sitemap", "~> 1.4"
-=======
->>>>>>> 09186f4758f5c92abaf17fd4f0480dff5dbd1d23
