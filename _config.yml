@@ -1,13 +1,13 @@
-title: Multiverse by HTML5 UP
+title: Galerie by kaz_kamil
 author: K. M. H.
 email: galeriepodbereski@gmail.com
+url: "https://kazkamil.github.io/"
 description: >-
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+ I am a german-based digital-/traditional-/concept-artist and 
+ Feel free to ask me anything.
 
 social:
-  twitter: kaz_kamil
+  twitter:
   facebook: kaz_kamil
   instagram: kaz_kamil
   github: kaz_kamil
@@ -18,6 +18,7 @@ markdown: kramdown
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-sitemap
 
 collections:
   images:
