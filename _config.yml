@@ -21,6 +21,7 @@ nav_exclude:                                            # The following paths ar
   - pages/about.md
   - pages/blog.html
   - pages/posts.md
+  - pages/projects.html
 
 
 ### Author Info ###
