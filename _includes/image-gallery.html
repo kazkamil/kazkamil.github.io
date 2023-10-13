@@ -1,9 +1,4 @@
-<style>
-.image-gallery {
-  max-width:10%;
-  height:auto;
-}
-</style>
+
 <div class="image-gallery">
 {% for file in site.static_files %}
   {% if file.path contains include.folder %}
@@ -16,7 +11,7 @@
 
       {% assign filenameparts = file.path | split: "/" %}
       {% assign filename = filenameparts | last | replace: file.extname,"" %}
-			<img src="{{ file.path }}" alt="">
+			<img src="{{ file.path }}" alt="" style="margin-top:5%; width:100%; height:auto;">
     {% endif %}
   {% endif %}
 {% endfor %}
